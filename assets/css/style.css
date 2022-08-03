@@ -259,6 +259,12 @@ section {
   background: #024e76;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .contact h2 {
   color: #fce138;
 }
@@ -282,12 +288,34 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 20px;
   font-style: normal;
+}
+.contact-form input, .contact-form textarea {
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 .contact-info a {
